@@ -46,7 +46,7 @@ def modeling_scaled(option_var):
     <li> R2 score is 0.6 have higher score than other model, which mean the model <b>predict better</b></li>
     </ol>
     </div>""", unsafe_allow_html=True)
-  elif str(option_var) == 'Ridge':
+  elif str(option_var) == 'Ridge()':
     img = Image.open(r"./image/Ridge.JPG")
     st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
@@ -58,7 +58,7 @@ def modeling_scaled(option_var):
     <li> R2 score is 0.02 not good, cause the score indicate that the model has <b>low of fit </b>of the data, which mean the model <b>doesn't predict well</b></li>
     </ol>
     </div>""", unsafe_allow_html=True)
-  elif str(option_var) == 'Lasso':
+  elif str(option_var) == 'Lasso()':
     img = Image.open(r"./image/Lasso.JPG")
     st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
