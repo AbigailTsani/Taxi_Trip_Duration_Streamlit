@@ -35,7 +35,7 @@ def modeling_scaled(option_var):
 
   st.subheader('Interpretation of Result in Test Dataset')
   if str(option_var) == 'DecisionTreeRegressor()':
-    img = Image.open(r"./image/DecisionTreeRegressor.jpg")
+    img = Image.open(r"./image/DecisionTreeRegressor.JPG")
     st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
     <b>{option_var}</b><br>
@@ -47,7 +47,7 @@ def modeling_scaled(option_var):
     </ol>
     </div>""", unsafe_allow_html=True)
   elif str(option_var) == 'Ridge':
-    img = Image.open(r"./image/Ridge().jpg")
+    img = Image.open(r"./image/Ridge.JPG")
     st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
     <b>{option_var}</b><br>
@@ -59,7 +59,7 @@ def modeling_scaled(option_var):
     </ol>
     </div>""", unsafe_allow_html=True)
   elif str(option_var) == 'Lasso':
-    img = Image.open(r"./image/Lasso().jpg")
+    img = Image.open(r"./image/Lasso.JPG")
     st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
     <b>{option_var}</b><br>
@@ -71,7 +71,7 @@ def modeling_scaled(option_var):
     </ol>
     </div>""", unsafe_allow_html=True)
   else:
-    img = Image.open(r"./image/LinearRegression.jpg")
+    img = Image.open(r"./image/LinearRegression.JPG")
     st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
     <b>{option_var}</b><br>
