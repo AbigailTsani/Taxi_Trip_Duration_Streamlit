@@ -1,0 +1,18 @@
+# Generated on: Python 3.11.3
+# DateTime==5.1
+# distlib==0.3.6
+folium==0.14.0
+# GitPython==3.1.31
+# joblib==1.2.0
+# matplotlib==3.7.1
+# numpy==1.24.2
+# opencage==2.1.0
+# pandas==1.5.3
+# pip==23.0.1
+# scikit-learn==1.2.2
+# scipy==1.10.1
+# seaborn==0.12.2
+streamlit==1.20.0
+streamlit-folium==0.11.1
+streamlit-leaflet==0.1.0
+# toml==0.10.2
