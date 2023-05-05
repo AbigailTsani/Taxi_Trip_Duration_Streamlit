@@ -31,7 +31,7 @@ import pickle
 import os
 
 def modeling_scaled(option_var):
-  st.subheader(f"Residual Plot of {option_var} Prediction")
+  st.subheader(f"Residual Plot of Prediction")
 
   st.subheader('Interpretation of Result in Test Dataset')
   if str(option_var) == 'DecisionTreeRegressor()':
