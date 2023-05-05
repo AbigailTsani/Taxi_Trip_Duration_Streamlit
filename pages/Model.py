@@ -32,11 +32,11 @@ import os
 
 def modeling_scaled(option_var):
   st.subheader(f"Residual Plot of {option_var} Prediction")
-  img = Image.open(f"./image/{option_var}.jpg")
-  st.image(img, use_column_width = True)
 
   st.subheader('Interpretation of Result in Test Dataset')
   if str(option_var) == 'DecisionTreeRegressor()':
+    img = Image.open(f"./image/DecisionTreeRegressor().jpg")
+    st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
     <b>{option_var}</b><br>
     <ol>
@@ -46,7 +46,33 @@ def modeling_scaled(option_var):
     <li> R2 score is 0.6 have higher score than other model, which mean the model <b>predict better</b></li>
     </ol>
     </div>""", unsafe_allow_html=True)
+  elif str(option_var) == 'Ridge()':
+    img = Image.open(f"./image/Ridge().jpg")
+    st.image(img, use_column_width = True)
+    st.write(f"""<div style='text-align:justify'>
+    <b>{option_var}</b><br>
+    <ol>
+    <li> The distribution of the residual is <b> not a normal distribution</b>, which mean the model is not a good regression model because the assumption of the model is not sufficient </li>
+    <li> RMSE is 1.23x higher than MAE, which mean there are several data that are predicted is to <b>far close the ground truth </b></li>
+    <li> MAPE can be interpret that the error of predicting is 0.92, which mean <b>not good because have high error </b></li>
+    <li> R2 score is 0.02 not good, cause the score indicate that the model has <b>low of fit </b>of the data, which mean the model <b>doesn't predict well</b></li>
+    </ol>
+    </div>""", unsafe_allow_html=True)
+  elif str(option_var) == 'Lasso()':
+    img = Image.open(f"./image/Lasso().jpg")
+    st.image(img, use_column_width = True)
+    st.write(f"""<div style='text-align:justify'>
+    <b>{option_var}</b><br>
+    <ol>
+    <li> The distribution of the residual is <b> not a normal distribution</b>, which mean the model is not a good regression model because the assumption of the model is not sufficient </li>
+    <li> RMSE is 1.23x higher than MAE, which mean there are several data that are predicted is to <b>far close the ground truth </b></li>
+    <li> MAPE can be interpret that the error of predicting is 0.92, which mean <b>not good because have high error </b></li>
+    <li> R2 score is 0.02 not good, cause the score indicate that the model has <b>low of fit </b>of the data, which mean the model <b>doesn't predict well</b></li>
+    </ol>
+    </div>""", unsafe_allow_html=True)
   else:
+    img = Image.open(f"./image/LinearRegression().jpg")
+    st.image(img, use_column_width = True)
     st.write(f"""<div style='text-align:justify'>
     <b>{option_var}</b><br>
     <ol>
